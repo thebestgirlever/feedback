@@ -1,0 +1,161 @@
+.filters {
+  height: 193px;
+  font-family: "Montserrat", sans-serif;
+  background: #fafafa;
+  color: #000000f5;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.block {
+  border-radius: 16px;
+  background: var(--surface-blank, #fff);
+  box-shadow: 0px 16px 24px 0px rgba(0, 0, 0, 0.04);
+  width: 920px;
+  height: 152px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  margin-left: 24px;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  padding-left: 20px;
+  margin-bottom: 18px;
+  margin-top: 22px;
+}
+
+.title {
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.section {
+  color: var(--secondary-200, #a8b8ca);
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.buttons {
+  display: flex;
+  flex: wrap;
+  gap: 10px;
+  padding-right: 10px;
+}
+
+.button {
+  color: var(--primary-600, #037bff);
+  background-color: #fff;
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  border-radius: 8px;
+  border: 1px solid var(--primary-600, #037bff);
+  cursor: pointer;
+  padding: 4px 16px;
+  align-items: center;
+  gap: 10px;
+}
+
+.button:hover {
+  opacity: 0.5;
+}
+
+.button_active,
+.button:active {
+  color: #fff;
+  background-color: #037bff;
+  opacity: 1;
+}
+
+.status {
+  display: flex;
+  flex-direction: column;
+  padding-left: 24px;
+  margin-bottom: 20px;
+}
+
+.checkBox {
+  display: flex;
+  gap: 14px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.label {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  cursor: pointer;
+  gap: 10px;
+}
+
+.input {
+  width: 20px;
+  height: 20px;
+  padding-right: 10px;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .filters {
+    height: 300px;
+  }
+
+  .bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .block {
+    height: 240px;
+    width: 727px;
+  }
+}
+@media (max-width: 768px) {
+  .filters {
+    height: 360px;
+  }
+
+  .bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .block {
+    height: 320px;
+    width: 310px;
+  }
+  .buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+}

@@ -1,0 +1,123 @@
+.item {
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  height: 150px;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0px 16px 24px 0px rgba(0, 0, 0, 0.04);
+  display: flex;
+  overflow: hidden;
+  gap: 16px;
+}
+
+.image {
+  height: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex: 1;
+  padding: 12px 0;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.tags {
+  position: absolute;
+  right: 12px;
+  top: 8px;
+  display: flex;
+  gap: 8px;
+}
+
+.limited {
+  color: var(--secondary-300, #889bb1);
+  width: 45px;
+  height: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 20px;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  background: var(--secondary-50, #e7eef9);
+  padding: 0 8px;
+  text-align: center;
+}
+
+.new {
+  color: var(--accent-approving, #20b02e);
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 20px;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  background: var(--background-approved, #e6f5e6);
+  padding: 0 8px;
+}
+.top {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.category {
+  color: #a8b8ca;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+}
+.name {
+  color: rgba(0, 0, 0, 0.96);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.description {
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  padding: 0 12px 12px 0;
+}
+
+.bottom {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.price {
+  color: #000;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.discount {
+  color: #F90;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+}
+
+
+@media (max-width: 360px) {
+  .list__product {
+    width: 340px;
+    height: auto;
+  }
+  .list__product__text {
+    padding: 5px 0;
+  }
+  .list__product__top {
+    width: 200px;
+  }
+  .first__line__category {
+    display: flex;
+    width: 130px;
+    justify-content: flex-end;
+  }
+}
+
